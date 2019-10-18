@@ -99,6 +99,7 @@ if (window.matchMedia("(max-width: 500px)").matches) {
 		} else {
 			
 			document.querySelector(".project-" + i).style.display = "none";
+			document.querySelector(".project-2").style.marginLeft = "0px";
 			
 			$(".more").removeClass("toggle");
 			$(".less").addClass("toggle");
