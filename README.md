@@ -54,8 +54,12 @@ This Specialization covers how to write syntactically correct HTML5 and CSS3, an
 ### Portoflio Demo
 
 ** You can visit the Protoflio [here](https://noha-m.netlify.com/).
-![Desktop-view]()
-![Mobile-view]()
+
+
+![Desktop-view](https://github.com/NohaaAa/Coursera-Web-Design-for-Everybody-Capstone-Project/blob/master/Screenshots/disktop-view.gif)
+
+
+![Mobile-view](https://github.com/NohaaAa/Coursera-Web-Design-for-Everybody-Capstone-Project/blob/master/Screenshots/mobile-view.gif)
 
 
 
