@@ -1,0 +1,688 @@
+/*reset*/
+
+* {
+
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+	font-size: 16px;
+
+}
+
+.nav-icon, .mobile-navbar {
+
+	display: none;
+
+}
+html, body {
+
+  	overflow-x: hidden;
+  	width: 100%;
+  	font-family: "Lato", sans-serif;
+  	font-size: 16px;
+
+}
+/*style the header */
+
+header {
+
+  	height: 10vh;
+	background-color: #2E2630;
+	font-family: "Gugi", cursive;
+}
+header .nav {
+
+	display: flex;
+  	flex-direction: row;
+  	justify-content: flex-end;
+  	flex-flow: nowrap;
+  	align-items: center;
+  	padding: 20px 50px 20px 0;
+  	position: fixed;
+  	z-index: 4;
+  	background-color: #2E2630;
+  	width: 100%;
+  	opacity: .8;
+}
+
+.nav a {
+
+	padding: 0 40px 0 50px;
+	color: #FFFFFF;
+  	text-decoration: none;
+  	font-size: 1.5vw;
+	margin-top: -5px;
+}
+.nav a:hover {
+
+  	color: #FC2277;
+}
+
+
+/*stylw the welcome section*/
+
+/*add animation class*/
+
+
+.container .welcome-sec {
+
+	background-color: #2E2630;
+  	color: #FFFFFF;
+  	text-align: center;
+  	height: 90vh;
+  	position: relative;
+
+
+}
+.welcome-sec .welcome-part {
+
+  	margin: 0 auto;
+ /*for animation*/
+
+}
+
+/*add animation for slider*/
+
+@keyframes sliding-forward {
+
+	from {transform: translateX(0%);}
+	to {transform: translateX(400%);}
+}
+
+@keyframes sliding-back {
+
+	from {transform: translateX(-400%)}
+	to {transform: translateX(0%)}
+}
+
+
+
+.forward {
+
+	animation: sliding-forward 2s ease-in-out;
+	transform: translateX(-400%);
+
+}
+
+
+.back {
+
+	animation: sliding-back 2s ease-in-out;
+	transform: translateX(0%);
+}
+
+
+/*add animation for slider*/
+
+
+.welcome-part .photo-div {
+  padding: 100px 0 30px 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.photo-div .photo {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.welcome-part h1 {
+  font-size: 4vw;
+  font-weight: 700;
+  padding: 0 0 10px 0;
+  font-family: "Gugi", cursive;
+}
+
+.welcome-part h1 span {
+  color: #A3395B;
+	font-size: 3vw
+}
+
+.welcome-part p {
+
+	font-size: 2vw;
+}
+.container .welcome-sec .about {
+  	width: 500px;
+  	text-align: center;
+	margin: -200px auto 0 auto;
+}
+
+.welcome-sec .not-visible {
+
+	transform:  translateX(-400%);
+}
+
+.container .welcome-sec .about h2 {
+  font-size: 3vw;
+  font-weight: 600;
+  color: #A3395B;
+  padding-bottom: 30px;
+  text-transform: capitalize;
+}
+
+.container .welcome-sec .about p {
+  	font-weight: 400;
+	padding-bottom: 30px;
+	line-height: 20px;
+
+}
+
+.container .welcome-sec .about .social i {
+  padding: 15px 0 0 20px;
+  font-size: 25px;
+  color: #A6A5A6;
+}
+
+.container .welcome-sec .about .social i:hover {
+  color: #A3395B;
+  cursor: pointer;
+}
+
+.container .welcome-sec .contain {
+  display: flex;
+  justify-content: center;
+
+position: absolute;
+  left: 600px;
+  top: 450px;
+
+}
+
+.container .welcome-sec .contain .circle {
+  display: block;
+  border-color: #FFFFFF;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  cursor: pointer;
+}
+
+.container .welcome-sec .contain .colored {
+  background-color: #A3395B;
+}
+
+.container .welcome-sec .contain .right {
+  margin-left: 10px;
+}
+
+/*style projects section*/
+
+.container .projects-sec {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 100px 0 70px 0;
+}
+
+.projects-sec .sec-title {
+  text-align: center;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.projects-sec .sec-title h2 {
+  padding-bottom: 5px;
+  border-bottom-color: #A3395B;
+  border-bottom-width: thick;
+  font-size: 30px;
+  border-bottom-style: solid;
+  font-family: "Gugi", cursive;
+  letter-spacing: 2px;
+  width: 170px;
+  margin: 0 auto;
+}
+
+.projects-sec .project-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.proj-contain {
+	display: none;
+  margin: 0 0 70px 0;
+  border-radius: 6px;
+  border-style: solid;
+  border-color: whitesmoke;
+  border-width: thin;
+  width: 450px;
+  height: 350px;
+  position: relative;
+  overflow: hidden;
+}
+.project-1 {
+
+	display: block;
+
+}
+
+.project-2 {
+
+	display: block;
+}
+.proj-screenshot {
+  width: 100%;
+}
+
+.proj-screenshot:hover {
+  width: 120%;
+  transition: width 1s ease-in-out;
+}
+
+.project-title {
+  background-color: #273344;
+  z-index: 3;
+  opacity: .8;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 15px 0 0 30px;
+  width: 100%;
+  height: 40%;
+}
+
+.project-title h6 {
+  font-size: 20px;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-family: "Gugi", cursive;
+}
+
+.project-title p {
+  padding: 5px 50px 10px 0;
+  color: #FFFFFF;
+}
+.project-title .links {
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.project-title ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 5px 10px 0 10px;
+}
+
+.project-title ul li {
+  padding-left: 10px;
+}
+
+.project-title ul li i {
+  font-size: 25px;
+}
+
+.project-title ul li .fa-css3-alt {
+  color: #1B90D4;
+}
+
+.project-title ul li .fa-html5 {
+  color: #EC5D28;
+}
+
+.project-title ul li .fa-js-square {
+  color: #F0D91D;
+}
+
+.project-title ul li .fa-sass {
+  color: #CD6799;
+}
+
+.project-title .website-link {
+  	position: relative;
+	right: 60px;
+	font-size: 18px;
+ 	float: right;
+  	color: #FC2277;
+  	font-family: "Gugi", cursive;
+  	font-weight: 600;
+}
+
+
+.project-container .project-2 {
+  margin-left: 90px;
+}
+
+.project-3 .project-title .website-link {
+  top: -20px;
+}
+
+
+
+.project-4 .proj-screenshot {
+  height: 100%;
+  width: 100%;
+}
+
+.project-4 .proj-screenshot:hover {
+  height: 120%;
+  width: 120%;
+  transition: width 1s ease-in-out, height 1s ease-in-out;
+}
+
+.project-4 .project-title .website-link {
+  top: -20px;
+}
+
+
+.project-5 .proj-screenshot {
+  height: 100%;
+  width: 100%;
+}
+
+.project-5 .proj-screenshot:hover {
+  height: 120%;
+  width: 110%;
+  transition: width 1s ease-in-out, height 1s ease-in-out;
+}
+
+.project-5 .project-title .website-link {
+  top: -20px;
+}
+
+
+.project-6 .proj-screenshot {
+  height: 100%;
+}
+
+.project-1 .website-link {
+
+	top: 10px;
+}
+
+.project-2 .website-link {
+	top: 10px;
+}
+
+.project-3 .website-link {
+
+
+	margin-top: 25px;
+}
+
+.project-4 .website-link {
+
+	margin-top: 40px;
+}
+
+.project-5 .website-link {
+
+	margin-top: 30px;
+}
+
+.project-6 .website-link {
+
+	margin-top: 10px;
+}
+.project-6 .proj-screenshot:hover {
+  height: 130%;
+  width: 120%;
+  transition: width 1s ease-in-out, height 1s ease-in-out;
+}
+
+.projects-sec .more, .projects-sec .less {
+  width: 140px;
+  height: 40px;
+  background-color: #A3395B;
+  border-color: #A3395B;
+  color: #FFFFFF;
+  font-family: "Gugi", cursive;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 20px 0 0 20px;
+  box-shadow: 4px 4px 4px #CFCFCF;
+}
+
+.projects-sec .more i, .projects-sec .less i {
+  padding: 0 0 0 5px;
+  font-size: 18px;
+}
+
+.projects-sec .toggle {
+  display: none;
+}
+
+/*style conatct section*/
+
+.contact {
+
+  background-color: #2E2630;
+  padding: 10px 0 20px 0;
+
+}
+
+.contact .contact-div {
+  margin: 20px auto;
+  text-align: center;
+  border-style: solid;
+  border-color: #FFFFFF;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  width: 600px;
+  height: 160px;
+  padding: 20px 0 20px 0;
+  box-shadow: 2px 3px #CFCFCF;
+}
+
+.contact .contact-div h2 {
+  font-size: 2vw;
+  font-family: "Gugi", cursive;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.contact .contact-div p {
+  font-size: 19px;
+  padding-top: 20px;
+}
+
+.contact .contact-div p span {
+  color: #A3395B;
+  font-weight: 700;
+}
+
+.contact .contact-div .email {
+  color: #A3395B;
+  padding-bottom: 2px;
+  padding-top: 10px;
+  border-bottom-style: dotted;
+  width: 255px;
+  margin: 0 auto;
+  border-bottom-color: #A3395B;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.contact .social {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact .social a {
+  color: #CFCFCF;
+  padding-left: 25px;
+}
+
+.contact .social i {
+
+	font-size: 25px;
+}
+.contact .social a:hover {
+  color: #A3395B;
+}
+
+footer {
+  color: #A6A5A6;
+  text-align: left;
+  padding: 5px 30px;
+}
+
+
+/*style for mobile view on screen less than 500px*/
+
+@media only screen and (max-width: 500px) {
+
+	header .nav {
+
+		display: none;
+	}
+
+	.nav-icon, .mobile-navbar {
+
+		display: block;
+	}
+
+
+
+	.nav-icon i {
+
+		font-size: 40px;
+		color: white;
+		float: right;
+		margin: 10px;
+		cursor: pointer;
+
+	}
+
+	.menu {
+
+		position: absolute;
+		right: 5px;
+		top: 5px;
+		opacity: .9;
+		text-align: center;
+		list-style: none;
+		border-radius: 5px;
+		background-color: #2E2630;
+		z-index: 1;
+		height: 99vh;
+
+
+	}
+
+	.close i {
+
+		font-size: 40px;
+		text-align: right;
+		color: white;
+
+	}
+	.close {
+
+		position: absolute;
+		right: 1px;
+		top: 1px;
+		display: none;
+
+	}
+	.menu li:first-of-type {
+
+		margin-top: 200px;
+	}
+	.menu li {
+
+		margin: 40px;
+	}
+	.menu li a {
+
+		color: white;
+		text-decoration: none;
+		margin: 10px;
+		font-size: 30px;
+	}
+
+	.menu li a:hover {
+
+		color: #A3395B;
+
+	}
+
+/*	class of menu openning*/
+	.opened {
+
+		width: 98%;
+		transition: width 1s ease-in-out;
+
+	}
+
+	.closed {
+
+		width: 0%;
+		transition: width 1s ease-in-out;
+	}
+
+	.welcome-part h1 {
+
+		font-size: 40px;
+	}
+
+	.welcome-part h1 span {
+
+		font-size: 30px;
+	}
+
+	.welcome-part p {
+
+		font-size: 25px;
+	}
+
+	.container .welcome-sec .contain {
+
+		left: 45%;
+
+	}
+
+	.container .welcome-sec .about {
+
+		width: 90%;
+	}
+
+	.container .welcome-sec .about h2 {
+		font-size: 25px;
+	}
+
+	.container .proj-contain {
+
+		width: 90%;
+
+	}
+
+	.projects-sec .project-container {
+
+		flex-direction: column;
+		align-items: center;
+		flex-wrap: nowrap;
+	}
+
+	.project-container .project-2 {
+
+		margin-right: 90px;
+	}
+
+	.contact .contact-div {
+
+		width: 90%;
+	}
+
+	.contact .contact-div h2 {
+
+		font-size: 25px;
+
+	}
+
+	.contact .contact-div p {
+
+		font-size: 20px;
+	}
+}
