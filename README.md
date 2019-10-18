@@ -51,11 +51,11 @@ This Specialization covers how to write syntactically correct HTML5 and CSS3, an
 
 ---
 
-### Screenshots of The Portoflio
+### Portoflio Demo
 
 ** You can visit the Protoflio [here](https://noha-m.netlify.com/).
-![]()
-![]()
+![Desktop-view]()
+![Mobile-view]()
 
 
 
