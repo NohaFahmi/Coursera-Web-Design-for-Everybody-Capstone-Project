@@ -24,6 +24,14 @@ This Specialization covers how to write syntactically correct HTML5 and CSS3, an
 
 ---
 
+### Build With: 
+* HTML5
+* CSS3
+* JavaScript
+* jQuery
+
+---
+
 ### Freehand design sketches for the Portoflio
 
 ** This is a design for Desktop screen
