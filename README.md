@@ -27,9 +27,12 @@ This Specialization covers how to write syntactically correct HTML5 and CSS3, an
 ### Freehand design sketches for the Portoflio
 
 ** This is a design for Desktop screen
+
 ![Desktop-design](https://github.com/NohaaAa/Coursera-Web-Design-for-Everybody-Capstone-Project/blob/master/Designs/Desktop%20view.png)
 
+
 ** This is a design for Mobile screen
+
 
 ![Mobile-view](https://github.com/NohaaAa/Coursera-Web-Design-for-Everybody-Capstone-Project/blob/master/Designs/mobile%20view.png)
 
