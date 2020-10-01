@@ -2,7 +2,7 @@
 This is a repository for the Portfolio Project (designed from scratch) of [Web Design For Everybody Specialization on Coursera (University of Michigan)](https://www.coursera.org/specializations/web-design).
 
 ## About this Specialization
-This Specialization covers how to write syntactically correct HTML5 and CSS3, and how to create interactive web experiences with JavaScript.
+This Specialization covers how to write syntactically correct HTML5 and CSS3, how to create interactive web experiences with JavaScript and how to make responsive web design.
 
 ## Courses: 
 1. [Introduction to HTML5](https://www.coursera.org/learn/html?specialization=web-design).
